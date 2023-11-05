@@ -9,4 +9,4 @@ Python (3.7)
 PyTorch (1.12.0) with CUDA (11.6)
 torchvision (0.13.0)
 numpy (1.21.6)
-MIT
+MIT License
