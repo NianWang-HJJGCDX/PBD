@@ -41,17 +41,20 @@ The results will be saved in the folder `./results/PBD/test_60/images`.
 
 3. When testing on synthetic images, you may need to quantitatively compare  with GTs.
    
-*  For PSNR and SSIM, you can run Eval.py before setting the image root and choosing datasets (We has  preliminarily set up the name correspondence between dehazing results and the corresponding GTs in different data sets)
+*  For PSNR and SSIM, you can run Eval.py before setting the image root and choosing datasets (We has  preliminarily set up the name correspondence between dehazing results and the corresponding GTs in different data sets):
 
-   <image root>:
+<image root>:
+```
    imgs_dehaze = glob('D:\Results\dehazing\BeDDE\whole\DCP\\*.png')
    imgs_gt = 'D:\Results\dehazing\BeDDE\whole\gt\\'
-
-   <datasets choice>:
+```
+<datasets choice>:
+```
     if __name__=='__main__':
         eval_SOTS_outdoor()
         # eval_OHAZE()
         # eval_BeDDE()
+```
 
 *  For CIEDE, you should run SOTS_eval.m or OHAZE_eval.m in Matlab before changing the root of GTs of SOTS and OHAZE data set, respectively.
 
