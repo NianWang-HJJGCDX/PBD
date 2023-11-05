@@ -43,12 +43,10 @@ The results will be saved in the folder `./results/PBD/test_60/images`.
    
 *  For PSNR and SSIM, you can run Eval.py before setting the image root and choosing datasets (We has  preliminarily set up the name correspondence between dehazing results and the corresponding GTs in different data sets):
 
-<image root>:
 ```
    imgs_dehaze = glob('D:\Results\dehazing\BeDDE\whole\DCP\\*.png')
    imgs_gt = 'D:\Results\dehazing\BeDDE\whole\gt\\'
 ```
-<datasets choice>:
 ```
     if __name__=='__main__':
         eval_SOTS_outdoor()
