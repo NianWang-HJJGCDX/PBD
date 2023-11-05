@@ -40,17 +40,22 @@ Run test.py before setting --dataroot(in configuration): [change to your own roo
 The results will be saved in the folder `./results/PBD/test_60/images`.
 
 3. When testing on synthetic images, you may need to quantitatively compare  with GTs.
-   3.1. For PSNR and SSIM, you can run Eval.py before setting the image root and choosing datasets (We has  preliminarily set up the name correspondence between dehazing results and the corresponding GTs in different data sets)
+   
+*  For PSNR and SSIM, you can run Eval.py before setting the image root and choosing datasets (We has  preliminarily set up the name correspondence between dehazing results and the corresponding GTs in different data sets)
+
    <image root>:
    imgs_dehaze = glob('D:\Results\dehazing\BeDDE\whole\DCP\\*.png')
    imgs_gt = 'D:\Results\dehazing\BeDDE\whole\gt\\'
+
    <datasets choice>:
     if __name__=='__main__':
         eval_SOTS_outdoor()
         # eval_OHAZE()
         # eval_BeDDE()
-    3.2. For CIEDE, you should run SOTS_eval.m or OHAZE_eval.m in Matlab before changing the root of GTs of SOTS and OHAZE data set, respectively.
-    3.3. For VI,RI,VSI,  you should run my_eval.m in Matlab before changing the root of GTs of BeDDE data set. Note that the main procedure was writen by ourselves. We cancel the city index of BeDDE set by original authors. For convenience, for this  procedure, you only need put the dehazing results and GTs of BeDDE respectively in one folder like a common way.
+
+*  For CIEDE, you should run SOTS_eval.m or OHAZE_eval.m in Matlab before changing the root of GTs of SOTS and OHAZE data set, respectively.
+
+*  For VI,RI,VSI,  you should run my_eval.m in Matlab before changing the root of GTs of BeDDE data set. Note that the main procedure was writen by ourselves. We cancel the city index of BeDDE set by original authors. For convenience, for this  procedure, you only need put the dehazing results and GTs of BeDDE respectively in one folder like a common way.
 
 # Training
 ## Train PBD on RESIDE-unpaired 
