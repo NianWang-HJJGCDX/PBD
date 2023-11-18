@@ -88,6 +88,6 @@ Duirng the traing, your directory tree should look like
 │   ...
 ...
 ```
-License：MIT.
+License：MIT
 
-For commercial use, please contact at the email for permission: nianwang04@outlook.com
+For any questions, please do not hesitate to contact me at nianwang04@outlook.com
