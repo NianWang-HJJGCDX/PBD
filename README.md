@@ -1,16 +1,23 @@
 # PBD [IEEE TCSVT 2025]
-This is the  Pytorch implementation of our paper "Weakly Supervised Image Dehazing via Physics-Based Decomposition",  which is accepted by [IEEE Transactions on Circuits and Systems for Video Technology] in 2025. If you are interested at this work, you can star the repository. Thanks! 
 
-# Our Configuration
+## Contributions 
+This is the  Pytorch implementation of our paper "Weakly Supervised Image Dehazing via Physics-Based Decomposition",  which is accepted by [IEEE Transactions on Circuits and Systems for Video Technology] in 2025. We proposed a physics-based decomposition architecture and a non-paired training method based on discrete wavelet transformation. If you are interested at this work, you can star the repository. Thanks! 
+
+## For more works
+My studies focus on machine learning (deep learning) and its applications to image enhancement, data clustering (classification), object recognition (tracking) etc.  If you are interested at my works, you can get more papers and codes at my [Github](https://github.com/NianWang-HJJGCDX/) and [Homepage](https://nianwang-hjjgcdx.github.io/).
+
+# Usage
+
+## Our Configuration
 All the experiments were conducted by a PyTorch framework on a PC with one RTX 3090 GPU. 
 
-# Our Environment
+## Our Environment
 Python (3.7)
 PyTorch (1.12.0) with CUDA (11.6)
 torchvision (0.13.0)
 numpy (1.21.6)
 
-# Testing
+## Testing
 1. Download the pretrained model (60_net_G.pth) at [Link1](https://pan.baidu.com/s/1GS5l3rMNTGpjMnqPsRrwzA?pwd=1234).
 
 2. Find the path `checkpoints\\PBD` and put the "60_net_G.pth" in it. Then the directory tree should look like
@@ -34,7 +41,7 @@ where (60_net_G.pth) is the our pretrained model, (opt.txt) records the options 
 
 
 
-# Training
+## Training
 1. Download RESIDE-unpaired on the links of original paper: [Google drive](https://drive.google.com/file/d/1SjQwESy8nwVO7pC3JRW7vXvJ6Qqk6Et4/view?usp=sharing) or [BaiduYun Disk](https://pan.baidu.com/s/1pqy-Ka9b9xVaeumdNSZAWQ) (Key: bswu).
 2. Open visdom by `python -m visdom.server` (Optional)
 3. Run the following command  from <PBD_root>.
@@ -62,5 +69,19 @@ Duirng the traing, your directory tree should look like
 │   │   └── PSNR_log.txt
 │   ...
 ...
+```
+
+# Citation
+```
+@ARTICLE{PBD,
+  author={Wang, Nian and Cui, Zhigao and Su, Yanzhao and Lan, Yunwei and Xue, Yuanliang and Zhang, Cong and Li, Aihua},
+  journal={IEEE Transactions on Circuits and Systems for Video Technology}, 
+  title={Weakly Supervised Image Dehazing via Physics-Based Decomposition}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={1-1},
+  keywords={Training;Atmospheric modeling;Scattering;Image color analysis;Image dehazing;Image reconstruction;Distortion;Generative adversarial networks;Image restoration;Discrete wavelet transforms;Weakly supervised image dehazing;generative adversarial network;discrete wavelet discriminator},
+  doi={10.1109/TCSVT.2025.3596024}}
 ```
 
